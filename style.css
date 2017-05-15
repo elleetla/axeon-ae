@@ -1,0 +1,147 @@
+/* style css */
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+html, body{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000000;
+    z-index:99;
+}
+
+#status {
+    width:140px;
+    height:182px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    /*background-image:url(images/logo-white.png);*/
+    background-repeat:no-repeat;
+    background-position:center;
+    -webkit-background-size:140px 182px;
+    background-size:140px 182px;
+    margin: -91px 0 0 -70px;
+}
+
+
+/*
+    Header
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#header{
+    background-color: #ffffff;
+    padding: 12px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#logo{
+    display: block;
+    text-align: center;
+}
+
+#logo > a > img {
+    width: 110px;
+}
+
+/*
+    Header
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#footer{
+    background-color: #000000;
+    padding: 30px 0px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    border-top: 1px solid #f3f3f3;
+}
+
+#footer p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0px;
+    color: #dddddd;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#content-map{
+    height: 100%;
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    background-image: url("img/map.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+    Modal
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+modal {
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+
+@-webkit-keyframes wink {
+    100% { background-position: 0 -5780px; }
+}
+
+@-moz-keyframes wink {
+    100% { background-position: 0 -5780px; }
+}
+
+@keyframes wink {
+    100% { background-position: 0 -5780px; }
+}
+
+#cursor-map {
+    background-image: url(img/animatedhotspot_white.png);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 40px auto 0;
+    -webkit-animation: wink 2s steps(27) infinite;
+    -moz-animation: wink 2s steps(27) infinite;
+    animation: wink 2s steps(27) infinite;
+}
