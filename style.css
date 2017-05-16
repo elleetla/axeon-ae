@@ -55,7 +55,7 @@ a, a:hover, a:active, a:focus, a:after{
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #header{
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 12px 0px;
     position: fixed;
     width: 100%;
@@ -147,9 +147,10 @@ a, a:hover, a:active, a:focus, a:after{
 /**/
 
 .container-infos{
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     background-color: #ffffff;
     border: 2px solid #000000;
+    position: relative;
 }
 
 div#detail {
@@ -162,6 +163,10 @@ div#detail {
     display: inline-block;
     color: #ffffff;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .btn-detail-infos:hover{
