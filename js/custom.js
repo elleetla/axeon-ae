@@ -7,4 +7,9 @@ $(function() {
         $('body').delay(400).css({'overflow':'visible'});
     });
 
+    $("#cursor-map").click(function(){
+        $("#content-map").load("detail.html");
+        $("#content-map").hide().fadeIn( 'slow' );
+    });
+
 });

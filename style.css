@@ -9,8 +9,14 @@ html, body{
 }
 
 body{
-    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #f9fafc;
+}
+
+a, a:hover, a:active, a:focus, a:after{
+    color: #5691f3;
+    text-decoration: inherit;
 }
 
 #preloader {
@@ -75,24 +81,36 @@ body{
     border-top: 1px solid #f3f3f3;
 }
 
-#footer p {
+#footer p{
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: normal;
     margin: 0px;
     color: #dddddd;
     text-transform: uppercase;
     letter-spacing: 6px;
 }
 
+#footer a{
+    color: #dddddd;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
 #content-map{
     height: 100%;
-    background-color: #000000;
     width: 100%;
     position: absolute;
+}
+
+#map{
     background-image: url("img/map.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 /*
